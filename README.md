@@ -6,21 +6,37 @@
 
 ## Features
 
-- Supports HTML and XML
 - Malformed input validation
+- Supports HTML and XML
+- Supports Deno via NPM
 
 ## Installation
 
 To install `markup2json`, run the following command:
 
+**NPM**
+
 ```
 npm install markup2json
+```
+
+**Yarn**
+
+```
+yarn add markup2json
+```
+
+**pnpm**
+
+```
+pnpm add markup2json
 ```
 
 ## Usage
 
 ```ts
 import markup2json from "markup2json";
+// import markup2json from "npm:markup2json"; // (for Deno)
 
 const html = "<div class='container'><p>Hello, World!</p></div>";
 const json = markup2json(html);
