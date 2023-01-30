@@ -1,8 +1,6 @@
 import dts from "rollup-plugin-dts";
 import esbuild from "rollup-plugin-esbuild";
 
-const production = process.env.NODE_ENV === "production";
-
 const bundle = (config) => ({
   ...config,
   input: "src/index.ts",
@@ -11,20 +9,11 @@ const bundle = (config) => ({
 
 export default [
   bundle({
-    plugins: [
-      esbuild({
-        minify: production,
-        sourcemap: !production,
-      }),
-    ],
+    plugins: [esbuild()],
     output: [
       {
-        format: "cjs",
-        file: "dist/index.js",
-      },
-      {
         format: "es",
-        file: "dist/index.mjs",
+        file: "dist/index.js",
       },
     ],
   }),

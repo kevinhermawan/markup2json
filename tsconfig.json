@@ -9,7 +9,7 @@
   },
   "include": [
     "vitest.config.ts",
-    "rollup.config.mjs",
+    "rollup.config.js",
     ".eslintrc.js",
     "src",
     "test"
