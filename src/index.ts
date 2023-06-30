@@ -26,7 +26,7 @@ export default function markup2Json(html: string): Result {
 }
 
 function nodeToJSON(node: HTMLElement): Result {
-  let result: Result = {
+  const result: Result = {
     tag: node.nodeName,
   };
 
