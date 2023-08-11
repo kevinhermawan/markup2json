@@ -47,7 +47,7 @@ describe("markup2Json", () => {
     const html = null as unknown as string;
 
     expect(() => markup2Json(html)).toThrowError(
-      "Invalid input. Please provide a valid HTML or XML string."
+      "Invalid input. Please provide a valid HTML or XML string.",
     );
   });
 
@@ -55,7 +55,7 @@ describe("markup2Json", () => {
     const html = "";
 
     expect(() => markup2Json(html)).toThrowError(
-      "Invalid input. Please provide a valid HTML or XML string."
+      "Invalid input. Please provide a valid HTML or XML string.",
     );
   });
 
@@ -63,7 +63,7 @@ describe("markup2Json", () => {
     const html = "<div><p>Hello, World!</p";
 
     expect(() => markup2Json(html)).toThrowError(
-      "Malformed input. Please ensure that the input is a well-formed HTML or XML string."
+      "Malformed input. Please ensure that the input is a well-formed HTML or XML string.",
     );
   });
 });

@@ -3,19 +3,13 @@
   "formatter": {
     "enabled": true,
     "indentStyle": "space",
-    "ignore": [
-      "dist",
-      "coverage"
-    ]
+    "ignore": ["dist", "coverage"]
   },
   "linter": {
     "enabled": true,
     "rules": {
       "recommended": true
     },
-    "ignore": [
-      "dist",
-      "coverage"
-    ]
+    "ignore": ["dist", "coverage"]
   }
 }
