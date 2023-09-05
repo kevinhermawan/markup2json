@@ -31,7 +31,7 @@ function nodeToJSON(node: HTMLElement): Result {
   };
 
   if (node.nodeType === 3 || node.nodeType === 4) {
-    result["text"] = node.nodeValue?.trim();
+    result.text = node.nodeValue?.trim();
   }
 
   if (node.attributes && node.attributes.length > 0) {
