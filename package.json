@@ -2,7 +2,7 @@
   "type": "module",
   "name": "markup2json",
   "description": "A library for converting HTML and XML into JSON",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "typings": "dist/index.d.ts",
